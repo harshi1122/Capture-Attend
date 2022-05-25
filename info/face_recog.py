@@ -70,7 +70,7 @@ def face(request):
                         now = date.today()
                         print(now)
                         if not Take_attendance.objects.filter(attendance_date=now, university_roll=data.university_roll_no).exists():
-                            attendance_report = Take_attendance(name=name1, status="Present",university_roll=data.university_roll_no, attendance_date=now, section=data.post, student=data)
+                            attendance_report = Take_attendance(name=name1, status="Present",university_roll=data.university_roll_no, attendance_date=now, section=data.post, employe=data)
                             attendance_report.save()
                 face_names.append(name1)
 
