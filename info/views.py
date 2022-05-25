@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from json import dumps
 from django.db.models.signals import pre_delete
 from django.dispatch.dispatcher import receiver
+from .forms import CreateUserForm
 
 import datetime
 import xlwt
@@ -23,23 +24,23 @@ def mymodel_delete(sender, instance, **kwargs):
 # Create your views here.
 def index(request):
     return render(request, 'info/index.html')
+def registerPage(request):
+	if request.user.is_authenticated:
+		return redirect('home')
+	else:
+		form = CreateUserForm()
+		if request.method == 'POST':
+			form = CreateUserForm(request.POST)
+			if form.is_valid():
+				form.save()
+				user = form.cleaned_data.get('username')
+				messages.success(request, 'Account was created for ' + user)
 
-# Contact Page
-def contact(request):
-    
-    if request.method == "POST":
-        name = request.POST.get('name', '')
-        phone = request.POST.get('phone', '')
-        email = request.POST.get('email', '')
-        content = request.POST.get('content', '')
-        contact=Contact(name=name, email=email, phone=phone, content=content)
-        contact.save()
-        messages.success(request, "Your message has been successfully sent")
-    else:
-        messages.success(request, 'Welcome to contact')
-    return render(request, "info/contact.html")
-    
+				return redirect('home')
+			
 
+		context = {'form':form}
+		return render(request, 'info/register.html', context)
 # Login
 @csrf_exempt
 def handleLogin(request):
