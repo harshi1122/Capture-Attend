@@ -210,14 +210,6 @@ def from_to_staff_attendance(request):
 
     return JsonResponse(json.dumps(list), content_type="application/json", safe=False)
 
-@login_required
-@csrf_exempt
-def delete(request):
-    x= Student.objects.get()
-    x.delete()
-    return redirect('../attendance')
-    
-
 # Exporting attendance in Excel File
 @login_required
 @csrf_exempt
