@@ -2,7 +2,10 @@
 A face recognition attendance management website using Python, Open-CV, Django and SQLite for Microsoft Engage 2022.
 
 # Engage2022
- This is project under Microsoft Engage 2022 Mentorship programme aimed at using Computer Vision to detect a face and mark the attendance of a student. The detector created is pretty   accurate and trains itself perfectly with just one picture that is uploaded by the respective student. The project runs on the server built using Django.
+ #### Problem Statement
+Develop a browser-based application or a native mobile application to demonstrate application of Face Recognition technology. <br>
+
+ This is my project under Microsoft Engage 2022 Mentorship programme aimed at using Computer Vision to detect a face and mark the attendance of a student. The detector created is pretty   accurate and trains itself perfectly with just one picture that is uploaded by the respective student. The project runs on the server built using Django.
  This project can be used in educational institutions or work places to register students or employees with minimal manual work.
  
  ## Project Structure
