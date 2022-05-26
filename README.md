@@ -10,7 +10,7 @@ A face recognition attendance management website using Python, Open-CV, Django a
   Week 1 : Creation of the login page, creation of the database for saving information, implementing face recognition features and ensuring detection of faces.
   <br> Week 2: Getting the information and displaying it on the attendance report page, making sure that the details are printed correctly along with date.
 <br> Week 3: Working on a system that would allow exporting the attendance report in the form of Excel sheet and doing any minor changes in the other portions to ensure smooth working.
-<br> Week 4: Creating a sign up interface (I was working with making every new individual superuser which didn’t seem efficient) and planning to deploy.
+<br> Week 4: Creating a sign up interface (I was working with making every new individual superuser which didn’t seem efficient), final touches and plans to deploy.
 
  ## 💻Features
  1. Real Time Camera
