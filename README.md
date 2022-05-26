@@ -51,7 +51,7 @@ Install the project dependencies with
 ```
 pip install -r requirements.txt
 ```
-Now you can run the project with the below command
+Now you can run the project with the below command and open it at the indicated host
 ```
 python manage.py runserver
 ```
