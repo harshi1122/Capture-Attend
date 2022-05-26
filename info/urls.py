@@ -5,6 +5,7 @@ from . import face_recog
 
 urlpatterns = [
     path('', views.index, name='home'),
+    path('delete/', views.delete, name='delete'),
     path('register/', views.registerPage, name="register"),
     path('add_student/', views.add_student, name='add_student'),
     path('attendance/', views.attendance, name='attendance'),
