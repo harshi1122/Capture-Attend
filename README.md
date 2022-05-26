@@ -38,7 +38,7 @@ To get this project up and running you should start by having Python and pip ins
 https://www.python.org/downloads/ <br>
 https://pip.pypa.io/en/stable/installation/ <br>
 
-Clone or download this repository and open it in your editor of choice or in Command Prompt terminal
+Clone or download this repository and open it in your editor of choice or use Command Prompt terminal
 ```
 git clone https://github.com/harshi1122/Capture-Attend.git
 ```
