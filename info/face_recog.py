@@ -9,7 +9,7 @@ from django.http.response import JsonResponse
 from django.shortcuts import render, HttpResponse, redirect
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
-from .models import Contact, Student, Take_attendance
+from .models import Student, Take_attendance
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from datetime import date
