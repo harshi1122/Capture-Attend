@@ -150,8 +150,6 @@
                               <form action="/info/stud_details/" id="my_form${json_data[key]["stud_sno"]}" method='POST' style="margin-left:10px;">  
                               {% csrf_token %}  
                               <input type="hidden" id="id" name="staff_sno" value="${json_data[key]["stud_sno"]}" >
-                        
-                              <a href="javascript:{}" onclick="document.getElementById('my_form${json_data[key]["stud_sno"]}').submit(); return false;">View Details</a>
                               </form>
                                  </div>
                               </div>
