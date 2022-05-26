@@ -30,3 +30,35 @@ Develop a browser-based application or a native mobile application to demonstrat
  5. HTML
  6. CSS
  7. Javascript 
+ 
+ 
+## Running this project
+
+To get this project up and running you should start by having Python and pip installed on your computer.You can refer to the links below <br>
+https://www.python.org/downloads/ <br>
+https://pip.pypa.io/en/stable/installation/ <br>
+
+Clone or download this repository and open it in your editor of choice or in Command Prompt terminal
+```
+git clone https://github.com/harshi1122/Capture-Attend.git
+```
+In the terminal, run the following commands in the base directory of this project.<br> 
+Note: If using Command Prompt, to navigate to the base directory after cloning, run the following command
+```
+cd capture-attend
+```
+Install the project dependencies with
+```
+pip install -r requirements.txt
+```
+Now you can run the project with the below command
+```
+python manage.py runserver
+```
+or
+```
+py manage.py runserver
+```
+
+
+
