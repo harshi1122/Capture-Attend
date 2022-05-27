@@ -82,11 +82,11 @@ def face(request):
             bottom *= 4
             left *= 4
 
-            cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
+            cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 0), 2)
 
-            cv2.rectangle(frame, (left, bottom - 35),(right, bottom), (0, 0, 255), cv2.FILLED)
+            cv2.rectangle(frame, (left, bottom - 35),(right, bottom), (0, 255, 0), cv2.FILLED)
             font = cv2.FONT_HERSHEY_DUPLEX
-            cv2.putText(frame, name1, (left + 6, bottom - 6), font, 0.5, (255, 255, 255), 1)
+            cv2.putText(frame, name1.upper(), (left + 6, bottom - 6), font, 0.5, (0, 0, 0))
 
         cv2.imshow('Video', frame)
 
